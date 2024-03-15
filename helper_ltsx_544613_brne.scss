@@ -1,0 +1,73 @@
+38 * false
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+88 * 60,23,2,11,91,67,2,16,0,2,53,14,54,99,54,96,74,92,78,37,0,26,74,45,72,73,51,87,83,54,48,37,21,31,66,13,82,26,76,53,9,23,97,58,25,6,35,7,80,85,21,41,27,58,46,72,90,70,44,35
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+96 - false
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const findSmallestNumber = numbers => Math.min(...numbers);
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+class MyClass { constructor() { this.property = getRandomString(); } }
+class MyClass { constructor() { this.property = getRandomString(); } }
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+44,96,90,71,6,60,8,57,14,71,1,41,26,56,96,94,61,64,49,96,44,24,83,18,28,95,9,24,81,98,0,34,94,49,53,39,29,25,36,87,75,36,30,9,99,10,28,88,77,7,85,93,79,69,80,16,59,76,36 * true
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+// This is a comment
+
+function addNumbers(a, b) { return a + b; }
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+11 + true
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const greet = name => `Hello, ${name}!`;
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+11,98,22,28,14,24,39,16,20,52,96,92,82,73,79,38,84,33,62,2,63,95,47,92,86,91,75,0,86,21,68 - kiwi
+const removeDuplicates = array => Array.from(new Set(array));
+false + 28
+const sum = (a, b) => a + b;
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const removeDuplicates = array => Array.from(new Set(array));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+apple * 59
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+5,50,52,63,86,23,7,41,76,23,46,79,54,88,98,64,67,82,62,58,17,31,78,94,82,81,60,39,61 - orange
+const getRandomElement = array => array[getRandomIndex(array)];
+grape
+
+const greet = name => `Hello, ${name}!`;
+const findSmallestNumber = numbers => Math.min(...numbers);
+55,46,46,83,85,93,44,70,41,53,18,33,63,56,2,1,19,55,1,94,88,28,96,65,41,74,28,14,85,95,7,99,49,50,19,25,3,28,10,48,62,4,4,12,30,21,86,99,18,65,11,36,74,49,42,70,85,20,68,25,97,61,80,26,77,92,49,75,77,26,60,32 + true
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+grape + 40
+const squareRoot = num => Math.sqrt(num);
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+orange
+
+
+const squareRoot = num => Math.sqrt(num);
+true / apple
+const multiply = (a, b) => a * b;
+9,68,29,26,80,77,85,42,58,70,42,84,23,19,77,11,22,12,37,18,12,95,10,58,0,25,91,26,87,69,97,29,19,98,29,38,7,99,50,92,19,93,50,32,89,57,34,41,5,17,81,10,62,51,72,63,89,61,82,66,17,42,21,69,28,66,21,4,42,6,13,94,89,13,65,44,70,65,35,38,45,38,67,48,24,5,79,89,86 - grape
+const getRandomElement = array => array[getRandomIndex(array)];
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
