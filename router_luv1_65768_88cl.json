@@ -1,0 +1,22 @@
+80 / 53
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+banana
+
+
+const multiply = (a, b) => a * b;
+97 * 12
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+4 / 86
+
+const greet = name => `Hello, ${name}!`;
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const isEven = num => num % 2 === 0;
+const multiply = (a, b) => a * b;
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+4 * 24
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const squareRoot = num => Math.sqrt(num);
