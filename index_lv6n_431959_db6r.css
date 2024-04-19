@@ -1,0 +1,30 @@
+grape
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const getRandomSubset = (array, size) => array.slice(0, size);
+44,36,23,59,37,45,54,72,80,2,91,53,18,48,49,83,34,52,74 - 9
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+kiwi - false
+const isEven = num => num % 2 === 0;
+const isEven = num => num % 2 === 0;
+banana - 
+const getUniqueValues = array => [...new Set(array)];
+const getRandomElement = array => array[getRandomIndex(array)];
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+banana
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+false * true
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+98,56,87,47,69,96,0,94,66,56,83,67,17,50,93,24,81,20,14,6,65,85,83,34,28,24,30,36,34,47,42,48,98,84,73,77,85,26,64,22,37,68,75,57,51,32,25,54,25,96,42,26,44,43,36,19,0,68,3,86,41,7 + grape
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const findSmallestNumber = numbers => Math.min(...numbers);
+grape
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
